@@ -6,24 +6,42 @@
   <title>Nora Hedfeld – Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    @font-face {
+      font-family: 'MySignatureFont';
+      src: url('Myfont2-Regular.ttf') format('truetype');
+      font-display: swap;
+    }
+
     body {
       font-family: 'Montserrat', sans-serif;
       margin: 0;
-      background-color: #111;
-      color: white;
+      background-color: #f9f9f9;
+      color: #1a1a1a;
     }
+
     header {
       text-align: center;
-      padding: 4rem 2rem 2rem;
+      padding: 3rem 1rem 2rem;
+      background-color: white;
     }
+
+    header img {
+      max-width: 100px;
+      margin-bottom: 1rem;
+    }
+
     header h1 {
-      font-size: 2.5rem;
-      color: #d4145a;
+      font-size: 2.8rem;
+      font-family: 'MySignatureFont', sans-serif;
+      color: #f27ca5;
+      margin: 0.5rem 0;
     }
+
     header p {
       font-size: 1.2rem;
-      color: #ccc;
+      color: #444;
     }
+
     .grid {
       display: flex;
       flex-wrap: wrap;
@@ -31,62 +49,69 @@
       gap: 2rem;
       padding: 2rem;
     }
+
     .card {
-      background-color: #1a1a1a;
+      background-color: white;
       border-radius: 16px;
       padding: 2rem;
       text-align: center;
-      width: 250px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      width: 270px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
       transition: transform 0.2s ease;
     }
+
     .card:hover {
       transform: translateY(-5px);
     }
+
     .card h2 {
-      color: #d4145a;
+      color: #f27ca5;
       margin-bottom: 0.5rem;
     }
+
     .card p {
       font-size: 0.95rem;
-      color: #ccc;
+      color: #555;
     }
+
     .card a {
       display: inline-block;
       margin-top: 1rem;
       padding: 0.6rem 1.2rem;
-      background-color: #d4145a;
+      background-color: #f27ca5;
       color: white;
       text-decoration: none;
       border-radius: 8px;
       font-weight: bold;
     }
+
     .card a:hover {
-      background-color: #a01045;
+      background-color: #e1618f;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Willkommen auf meinem Portfolio</h1>
-    <p>Film ab für Kreativität, Technik & Strategie</p>
+    <img src="Logo Nora Hedfeld.png" alt="Logo Nora Hedfeld">
+    <h1>Film ab für deine nächste Idee</h1>
+    <p>Kreativ. Strukturiert. Immer mit einem kleinen Funken Extra.</p>
   </header>
 
   <div class="grid">
     <div class="card">
       <h2>Projekte</h2>
-      <p>Eine Auswahl meiner kreativen Arbeiten aus Design, Social Media & mehr.</p>
+      <p>Design, Social Media, Leitsysteme & Co – eine Auswahl meiner Arbeiten.</p>
       <a href="projekte.html">Entdecken</a>
     </div>
     <div class="card">
       <h2>Über mich</h2>
-      <p>Wer ich bin, was mich antreibt – mein beruflicher und kreativer Weg.</p>
+      <p>Wer ich bin, was mich antreibt – mit klarer Kante & kreativer Handschrift.</p>
       <a href="ueber-mich.html">Mehr erfahren</a>
     </div>
     <div class="card">
       <h2>Kontakt</h2>
-      <p>Du möchtest mit mir zusammenarbeiten oder mehr wissen?</p>
+      <p>Für neue Ideen, Projekte oder ein erstes Gespräch: Ich freue mich!</p>
       <a href="kontakt.html">Kontaktieren</a>
     </div>
   </div>
