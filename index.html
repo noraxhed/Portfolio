@@ -9,89 +9,87 @@
     body {
       font-family: 'Montserrat', sans-serif;
       margin: 0;
-      background-color: #f4f4f4;
-      color: #222;
-    }
-    .locked {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
       background-color: #111;
       color: white;
-    }
-    .lock-box {
-      background-color: #1c1c1c;
-      padding: 3rem;
-      border-radius: 16px;
-      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
-      text-align: center;
-    }
-    .lock-box h1 {
-      color: #d4145a;
-      margin-bottom: 1rem;
-    }
-    .lock-box p {
-      color: #ccc;
-      font-size: 1rem;
     }
     header {
-      background-color: #111;
-      color: white;
+      text-align: center;
+      padding: 4rem 2rem 2rem;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #d4145a;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .card {
+      background-color: #1a1a1a;
+      border-radius: 16px;
       padding: 2rem;
       text-align: center;
+      width: 250px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease;
     }
-    section {
-      max-width: 900px;
-      margin: 2rem auto;
-      background: white;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    .card:hover {
+      transform: translateY(-5px);
     }
-    h1, h2 {
+    .card h2 {
       color: #d4145a;
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      font-size: 0.95rem;
+      color: #ccc;
+    }
+    .card a {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      background-color: #d4145a;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    .card a:hover {
+      background-color: #a01045;
     }
   </style>
 </head>
 <body>
 
-<div class="locked" id="lockScreen">
-  <div class="lock-box">
-    <h1>Zugangscode erforderlich</h1>
-    <p>Diese Seite ist geschützt. Bitte lade die Seite neu<br>und gib den Zugangscode ein, um fortzufahren.</p>
-  </div>
-</div>
-
-<div style="display:none" id="mainContent">
   <header>
-    <h1>Willkommen in meiner Welt</h1>
-    <p>Film ab für meine Kreativität – by Nora Hedfeld</p>
+    <h1>Willkommen auf meinem Portfolio</h1>
+    <p>Film ab für Kreativität, Technik & Strategie</p>
   </header>
 
-  <section>
-    <h2>Über mich</h2>
-    <p>Ich bin Nora, 25 Jahre alt, kreative Veranstaltungskauffrau und angehende Betriebswirtin mit Erfahrung in Social Media, Design und technischer Konzeption. Mehr zu mir, meinen Projekten und Leidenschaften findest du hier!</p>
-  </section>
-
-  <section>
-    <h2>Projekte</h2>
-    <p>Empower Minds, Runner Sport, Vier Pfoten – meine Arbeit reicht von Social Media bis Leitsystemen und Corporate Design. Jede Szene erzählt eine neue Geschichte.</p>
-  </section>
-
-  <section>
-    <h2>Kontakt</h2>
-    <p>📧 nora.hedfeld@gmail.com<br>📱 0157 8744 5436<br>📷 Instagram: Noraxhed</p>
-  </section>
-</div>
-
-<script>
-  const code = prompt("Bitte Zugangscode eingeben:");
-  if (code === "N2025") {
-    document.getElementById('lockScreen').style.display = 'none';
-    document.getElementById('mainContent').style.display = 'block';
-  }
-</script>
+  <div class="grid">
+    <div class="card">
+      <h2>Projekte</h2>
+      <p>Eine Auswahl meiner kreativen Arbeiten aus Design, Social Media & mehr.</p>
+      <a href="projekte.html">Entdecken</a>
+    </div>
+    <div class="card">
+      <h2>Über mich</h2>
+      <p>Wer ich bin, was mich antreibt – mein beruflicher und kreativer Weg.</p>
+      <a href="ueber-mich.html">Mehr erfahren</a>
+    </div>
+    <div class="card">
+      <h2>Kontakt</h2>
+      <p>Du möchtest mit mir zusammenarbeiten oder mehr wissen?</p>
+      <a href="kontakt.html">Kontaktieren</a>
+    </div>
+  </div>
 
 </body>
 </html>
