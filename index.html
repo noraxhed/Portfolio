@@ -31,10 +31,11 @@
     }
 
     header h1 {
-      font-size: 2.8rem;
+      font-size: 3.2rem;
       font-family: 'MySignatureFont', sans-serif;
       color: #f27ca5;
       margin: 0.5rem 0;
+      letter-spacing: 0.5px;
     }
 
     header p {
@@ -64,9 +65,16 @@
       transform: translateY(-5px);
     }
 
-    .card h2 {
+    .card.pink h2 {
       color: #f27ca5;
-      margin-bottom: 0.5rem;
+    }
+
+    .card.blue h2 {
+      color: #78c9e1;
+    }
+
+    .card.yellow h2 {
+      color: #f5e75c;
     }
 
     .card p {
@@ -78,15 +86,36 @@
       display: inline-block;
       margin-top: 1rem;
       padding: 0.6rem 1.2rem;
-      background-color: #f27ca5;
       color: white;
       text-decoration: none;
       border-radius: 8px;
       font-weight: bold;
+      transition: background-color 0.3s, color 0.3s;
     }
 
-    .card a:hover {
-      background-color: #e1618f;
+    .card.pink a {
+      background-color: #f27ca5;
+    }
+    .card.pink a:hover {
+      background-color: #f5e75c;
+      color: #1a1a1a;
+    }
+
+    .card.blue a {
+      background-color: #78c9e1;
+    }
+    .card.blue a:hover {
+      background-color: #f5e75c;
+      color: #1a1a1a;
+    }
+
+    .card.yellow a {
+      background-color: #f5e75c;
+      color: #1a1a1a;
+    }
+    .card.yellow a:hover {
+      background-color: #78c9e1;
+      color: white;
     }
   </style>
 </head>
@@ -99,17 +128,17 @@
   </header>
 
   <div class="grid">
-    <div class="card">
+    <div class="card pink">
       <h2>Projekte</h2>
       <p>Design, Social Media, Leitsysteme & Co – eine Auswahl meiner Arbeiten.</p>
       <a href="projekte.html">Entdecken</a>
     </div>
-    <div class="card">
+    <div class="card blue">
       <h2>Über mich</h2>
       <p>Wer ich bin, was mich antreibt – mit klarer Kante & kreativer Handschrift.</p>
       <a href="ueber-mich.html">Mehr erfahren</a>
     </div>
-    <div class="card">
+    <div class="card yellow">
       <h2>Kontakt</h2>
       <p>Für neue Ideen, Projekte oder ein erstes Gespräch: Ich freue mich!</p>
       <a href="kontakt.html">Kontaktieren</a>
