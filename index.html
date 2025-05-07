@@ -1,1 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nora Hedfeld – Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #222;
+    }
+    .locked {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #111;
+      color: white;
+      font-size: 1.5rem;
+      text-align: center;
+      padding: 2rem;
+    }
+    header {
+      background-color: #111;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      color: #d4145a;
+    }
+  </style>
+</head>
+<body>
+
+<div class="locked" id="lockScreen">
+  Zugriff nur mit Zugangscode.<br><br>
+  <strong>Bitte Seite neu laden und Code eingeben.</strong>
+</div>
+
+<div style="display:none" id="mainContent">
+  <header>
+    <h1>Willkommen in meiner Welt</h1>
+    <p>Film ab für meine Kreativität – by Nora Hedfeld</p>
+  </header>
+
+  <section>
+    <h2>Über mich</h2>
+    <p>Ich bin Nora, 25 Jahre alt, kreative Veranstaltungskauffrau und angehende Betriebswirtin mit Erfahrung in Social Media, Design und technischer Konzeption. Mehr zu mir, meinen Projekten und Leidenschaften findest du hier!</p>
+  </section>
+
+  <section>
+    <h2>Projekte</h2>
+    <p>Empower Minds, Runner Sport, Vier Pfoten – meine Arbeit reicht von Social Media bis Leitsystemen und Corporate Design. Jede Szene erzählt eine neue Geschichte.</p>
+  </section>
+
+  <section>
+    <h2>Kontakt</h2>
+    <p>📧 nora.hedfeld@gmail.com<br>📱 0157 8744 5436<br>📷 Instagram: Noraxhed</p>
+  </section>
+</div>
+
+<script>
+  const code = prompt("Bitte Zugangscode eingeben:");
+  if (code === "N2025") {
+    document.getElementById('lockScreen').style.display = 'none';
+    document.getElementById('mainContent').style.display = 'block';
+  }
+</script>
+
+</body>
+</html>
 
