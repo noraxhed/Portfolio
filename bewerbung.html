@@ -3,143 +3,179 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zertifikate & Nachweise – Nora Hedfeld</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Zertifikate & Nachweise</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
   <style>
     body {
-      font-family: sans-serif;
-      background-color: #fffdfd;
-      margin: 0;
-      padding: 2rem;
-      color: #1e1e1e;
+      font-family: 'Myfont2', sans-serif;
+      padding: 40px;
     }
-
-    h1, h2 {
-      font-family: 'Myfont2-Regular', sans-serif;
-      color: #d36e9e;
+    h1 {
       text-align: center;
+      color: #d04c84;
+      font-size: 2rem;
+      margin-bottom: 0;
     }
-
-    .accordion {
-      max-width: 900px;
-      margin: 2rem auto;
+    p.subtitle {
+      text-align: center;
+      color: #444;
+      margin-bottom: 30px;
     }
-
-    .accordion-item {
-      border: 1px solid #e1e1e1;
-      border-radius: 10px;
-      margin-bottom: 1rem;
-      overflow: hidden;
-    }
-
-    .accordion-header {
-      background-color: #f9f9f9;
-      color: #333;
-      padding: 1rem;
-      cursor: pointer;
-      font-weight: bold;
-      font-size: 1.1rem;
-      transition: background-color 0.3s;
-    }
-
-    .accordion-header:hover {
-      background-color: #f0f0f0;
-    }
-
-    .accordion-content {
-      display: none;
-      padding: 0;
-      background: #fff;
-    }
-
-    .accordion-content iframe {
+    iframe {
       width: 100%;
       height: 500px;
       border: none;
     }
-
-    .zurueck {
-      display: block;
-      text-align: center;
-      margin-top: 3rem;
-      color: #d36e9e;
-      text-decoration: none;
+    .timeline {
+      border-left: 4px solid #d04c84;
+      margin-left: 20px;
+      padding-left: 30px;
+      margin-bottom: 60px;
+    }
+    .timeline h5 {
+      color: #d04c84;
+      font-weight: bold;
+    }
+    .timeline p {
+      margin-top: -10px;
+      margin-bottom: 25px;
+    }
+    .skillmatrix {
+      margin-top: 40px;
+    }
+    .skillmatrix h3 {
+      margin-bottom: 20px;
+    }
+    .progress {
+      height: 20px;
+      margin-bottom: 20px;
+    }
+    .progress-bar {
+      background-color: #d04c84;
     }
   </style>
 </head>
 <body>
   <h1>Zertifikate & Nachweise</h1>
-  <p style="text-align:center;">Alle Dokumente in stilvoller Vorschau:</p>
+  <p class="subtitle">Alle Dokumente in stilvoller Vorschau:</p>
 
-  <div class="accordion">
+  <div class="timeline">
+    <h5>seit 2023 – Weiterbildung zur Betriebswirtin (VWA)</h5>
+    <p>Marketing, Recht & Wirtschaft – Abschluss voraussichtlich Juli 2025</p>
+
+    <h5>2021 – 2023 Berufstätigkeit bei Dieckmann</h5>
+    <p>Veranstaltungsorganisation, Prozesse, Kundenbetreuung</p>
+
+    <h5>2017 – 2021 Ausbildung zur Veranstaltungskauffrau</h5>
+    <p>Ausbildung bei satis&fy AG – Schwerpunkt Projektleitung & Organisation</p>
+
+    <h5>2017 – Bundesfreiwilligendienst und Aushilfe</h5>
+    <p>Betreuung, Organisation und erste Berufserfahrung</p>
+
+    <h5>2017 – Abitur</h5>
+    <p>Allgemeine Hochschulreife</p>
+  </div>
+
+  <div class="accordion" id="zertifikateAccordion">
     <div class="accordion-item">
-      <div class="accordion-header">📄 Ausbildereignung</div>
-      <div class="accordion-content">
-        <iframe src="downloads/Ausbildereignung_Hedfeld.pdf"></iframe>
+      <h2 class="accordion-header" id="heading1">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+          <i class="bi bi-file-earmark-pdf"></i> Ausbildereignung
+        </button>
+      </h2>
+      <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#zertifikateAccordion">
+        <div class="accordion-body">
+          <iframe src="downloads/Ausbildereignung_Hedfeld.pdf"></iframe>
+        </div>
       </div>
     </div>
+
     <div class="accordion-item">
-      <div class="accordion-header">📄 Bildrechte</div>
-      <div class="accordion-content">
-        <iframe src="downloads/Bildrechte_Hedfeld.pdf"></iframe>
+      <h2 class="accordion-header" id="heading2">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+          <i class="bi bi-file-earmark-pdf"></i> Bildrechte
+        </button>
+      </h2>
+      <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#zertifikateAccordion">
+        <div class="accordion-body">
+          <iframe src="downloads/Bildrechte_Hedfeld.pdf"></iframe>
+        </div>
       </div>
     </div>
+
     <div class="accordion-item">
-      <div class="accordion-header">📄 C1-Zertifikat</div>
-      <div class="accordion-content">
-        <iframe src="downloads/C1_Zertifikat.pdf"></iframe>
+      <h2 class="accordion-header" id="heading3">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+          C1-Zertifikat
+        </button>
+      </h2>
+      <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#zertifikateAccordion">
+        <div class="accordion-body">
+          <iframe src="downloads/C1_Zertifikat.pdf"></iframe>
+        </div>
       </div>
     </div>
+
     <div class="accordion-item">
-      <div class="accordion-header">📄 EDV-Führerschein</div>
-      <div class="accordion-content">
-        <iframe src="downloads/EDV-Führerschein.pdf"></iframe>
+      <h2 class="accordion-header" id="heading4">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+          EDV-Führerschein
+        </button>
+      </h2>
+      <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#zertifikateAccordion">
+        <div class="accordion-body">
+          <iframe src="downloads/EDV-Führerschein.pdf"></iframe>
+        </div>
       </div>
     </div>
+
     <div class="accordion-item">
-      <div class="accordion-header">📄 Examen Betriebswirtin</div>
-      <div class="accordion-content">
-        <iframe src="downloads/Examen_Hedfeld.pdf"></iframe>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <div class="accordion-header">📄 Führerschein</div>
-      <div class="accordion-content">
-        <iframe src="downloads/Führerschein_Hedfeld.pdf"></iframe>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <div class="accordion-header">📄 Jagdschein</div>
-      <div class="accordion-content">
-        <iframe src="downloads/Jagdschein_Hedfeld.pdf"></iframe>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <div class="accordion-header">📄 Lebenslauf</div>
-      <div class="accordion-content">
-        <iframe src="downloads/Lebenslauf_Hedfeld.pdf"></iframe>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <div class="accordion-header">📄 Zeugnisse Betriebswirt</div>
-      <div class="accordion-content">
-        <iframe src="downloads/Zeugnisse_Betriebswirt.pdf"></iframe>
+      <h2 class="accordion-header" id="heading5">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5">
+          Examen Betriebswirtin
+        </button>
+      </h2>
+      <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#zertifikateAccordion">
+        <div class="accordion-body">
+          <iframe src="downloads/Examen_Hedfeld.pdf"></iframe>
+        </div>
       </div>
     </div>
   </div>
 
-  <a class="zurueck" href="index.html">← Zurück zur Startseite</a>
+  <div class="skillmatrix">
+    <h3>Fähigkeiten & Programme</h3>
 
-  <script>
-    const headers = document.querySelectorAll('.accordion-header');
-    headers.forEach(header => {
-      header.addEventListener('click', () => {
-        const content = header.nextElementSibling;
-        const isOpen = content.style.display === 'block';
-        document.querySelectorAll('.accordion-content').forEach(c => c.style.display = 'none');
-        content.style.display = isOpen ? 'none' : 'block';
-      });
-    });
-  </script>
+    <p>Eventorganisation</p>
+    <div class="progress">
+      <div class="progress-bar" style="width: 95%">95%</div>
+    </div>
+
+    <p>Marketing & Social Media</p>
+    <div class="progress">
+      <div class="progress-bar" style="width: 90%">90%</div>
+    </div>
+
+    <p>MS Office</p>
+    <div class="progress">
+      <div class="progress-bar" style="width: 85%">85%</div>
+    </div>
+
+    <p>Factro (Projektmanagement)</p>
+    <div class="progress">
+      <div class="progress-bar" style="width: 80%">80%</div>
+    </div>
+
+    <p>Prozessoptimierung</p>
+    <div class="progress">
+      <div class="progress-bar" style="width: 85%">85%</div>
+    </div>
+  </div>
+
+  <p class="mt-5">
+    <a href="index.html" class="text-decoration-none">← Zurück zur Startseite</a>
+  </p>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
