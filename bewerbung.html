@@ -1,102 +1,138 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bewerbung – Nora Hedfeld</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preload" href="/fonts/Myfont2-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preload" href="/fonts/Myfont2-Regular.woff2" as="font" type="font/woff2" crossorigin />
   <style>
     body {
       font-family: 'Poppins', sans-serif;
-      background-color: #fdfdfd;
+      background-color: #fafafa;
       color: #333;
       margin: 0;
+      padding: 0;
+    }
+    header, .content, footer {
+      max-width: 1000px;
+      margin: auto;
       padding: 2rem;
     }
     h1 {
-      font-size: 2.4rem;
-      font-family: 'Myfont2-Regular', cursive;
-      color: #E68DA4;
+      font-family: 'MyFont2', cursive;
+      font-size: 2rem;
+      color: #D97D9E;
       text-align: center;
       margin-bottom: 1rem;
     }
-    .backlink {
-      text-align: center;
-      margin-top: 1rem;
+    .timeline {
+      position: relative;
+      margin: 2rem 0;
+      padding-left: 2rem;
+      border-left: 4px solid #D97D9E;
     }
-    .backlink a {
-      color: #7BC8E6;
-      text-decoration: none;
-      font-weight: bold;
+    .timeline-entry {
+      margin-bottom: 2rem;
+      position: relative;
     }
-    .section {
-      margin: 3rem 0;
+    .timeline-entry::before {
+      content: "";
+      position: absolute;
+      left: -0.9rem;
+      top: 0;
+      width: 1rem;
+      height: 1rem;
+      background-color: #D97D9E;
+      border-radius: 50%;
     }
-    .section h2 {
-      font-size: 1.8rem;
-      color: #7BC8E6;
-      border-bottom: 2px solid #7BC8E6;
-      display: inline-block;
-      margin-bottom: 1rem;
+    .timeline-entry h3 {
+      margin: 0;
+      color: #D97D9E;
     }
-    .downloads ul {
+    .timeline-entry p {
+      margin: 0.3rem 0 0;
+    }
+    .downloads {
+      margin-top: 3rem;
+    }
+    .downloads h2 {
+      color: #80CAE8;
+      border-bottom: 2px solid #80CAE8;
+      padding-bottom: 0.3rem;
+    }
+    ul {
       list-style: none;
-      padding: 0;
+      padding-left: 0;
     }
-    .downloads li {
-      margin: 0.5rem 0;
-    }
-    .downloads a {
-      color: #555;
+    li a {
+      color: #333;
       text-decoration: none;
-      border: 1px solid #ccc;
-      padding: 0.5rem 1rem;
-      border-radius: 5px;
-      display: inline-block;
-      background-color: #fff;
     }
-    .downloads a:hover {
-      background-color: #f5f5f5;
+    li a:hover {
+      color: #D97D9E;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 3rem;
+      color: #D97D9E;
+      text-decoration: none;
+    }
+    .back-link:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <h1>Bewerbung & Unterlagen</h1>
+  <header>
+    <h1>Bewerbung & Qualifikationen</h1>
+    <p style="text-align:center; font-size: 1.2rem;">Erfahrungen, Fähigkeiten & Zertifikate</p>
+  </header>
 
-  <div class="section">
-    <h2>Lebenslauf als Zeitstrahl</h2>
-    <img src="/img/lebenslauf-zeitstrahl.png" alt="Zeitstrahl Lebenslauf Nora Hedfeld" style="width: 100%; max-width: 800px; display: block; margin: 0 auto;">
-  </div>
+  <div class="content">
+    <section class="timeline">
+      <div class="timeline-entry">
+        <h3>seit 2022 – Studium BWL mit Schwerpunkt Marketing</h3>
+        <p>Erwarteter Abschluss: Juli 2025 · Vertiefung: Eventmanagement, Social Media, Prozessoptimierung</p>
+      </div>
+      <div class="timeline-entry">
+        <h3>2022 – Weiterbildung zur Betriebswirtin (VWA)</h3>
+        <p>Abschluss mit Note 1,2 · Fokus auf Wirtschaft, Recht & Marketing</p>
+      </div>
+      <div class="timeline-entry">
+        <h3>2020 – Ausbildung zur Veranstaltungskauffrau</h3>
+        <p>Ausbildung bei satis&fy AG · Schwerpunkt Projektleitung & Veranstaltungsorganisation</p>
+      </div>
+      <div class="timeline-entry">
+        <h3>seit 2023 – Handball-Trainerin</h3>
+        <p>Ehrenamtliche Tätigkeit · Teamverantwortung & Jugendförderung</p>
+      </div>
+    </section>
 
-  <div class="section">
-    <h2>Downloads</h2>
-    <div class="downloads">
-      <h3>Qualifikationen & Führerscheine</h3>
+    <section class="downloads">
+      <h2>Qualifikationen & Führerscheine</h2>
       <ul>
-        <li><a href="/downloads/Ausbildereignung_Hedfeld.pdf" download>Ausbildereignung</a></li>
-        <li><a href="/downloads/EDV-Führerschein.pdf" download>EDV-Führerschein</a></li>
-        <li><a href="/downloads/Führerschein_Hedfeld.pdf" download>Führerschein</a></li>
-        <li><a href="/downloads/Jagdschein_Hedfeld.pdf" download>Jagdschein</a></li>
-        <li><a href="/downloads/C1_Zertifikat.pdf" download>C1 Sprachzertifikat</a></li>
+        <li><a href="/downloads/Ausbildereignung_Hedfeld.pdf" download>📄 Ausbildereignung</a></li>
+        <li><a href="/downloads/EDV-Führerschein.pdf" download>📄 EDV-Führerschein</a></li>
+        <li><a href="/downloads/Führerschein_Hedfeld.pdf" download>📄 Führerschein Klasse B</a></li>
+        <li><a href="/downloads/Jagdschein_Hedfeld.pdf" download>📄 Jagdschein</a></li>
+        <li><a href="/downloads/C1_Zertifikat.pdf" download>📄 C1 Englisch-Zertifikat</a></li>
       </ul>
 
-      <h3>Zeugnisse & Examen</h3>
+      <h2>Zeugnisse & Examen</h2>
       <ul>
-        <li><a href="/downloads/Examen_Hedfeld.pdf" download>Examen</a></li>
-        <li><a href="/downloads/Zeugnisse_Betriebswirt.pdf" download>Zeugnisse Betriebswirtin</a></li>
+        <li><a href="/downloads/Examen_Hedfeld.pdf" download>📄 Examen Betriebswirtin</a></li>
+        <li><a href="/downloads/Zeugnisse_Betriebswirt.pdf" download>📄 Zeugnisse Weiterbildung</a></li>
       </ul>
 
-      <h3>Portfolio & Bildrechte</h3>
+      <h2>Portfolio & Bildrechte</h2>
       <ul>
-        <li><a href="/downloads/Portfolio%20Nora%20Hedfeld_25.pdf" download>Portfolio Nora Hedfeld</a></li>
-        <li><a href="/downloads/Bildrechte_Hedfeld.pdf" download>Bildrechte</a></li>
+        <li><a href="/downloads/Portfolio Nora Hedfeld_25.pdf" download>📄 Portfolio (PDF)</a></li>
+        <li><a href="/downloads/Bildrechte_Hedfeld.pdf" download>📄 Bildrechte</a></li>
       </ul>
-    </div>
-  </div>
+    </section>
 
-  <div class="backlink">
-    <a href="index.html">← Zurück zur Startseite</a>
+    <a class="back-link" href="index.html">← Zurück zur Startseite</a>
   </div>
 </body>
 </html>
