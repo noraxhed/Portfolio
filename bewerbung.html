@@ -1,48 +1,102 @@
-<section id="bewerbung" class="py-16 px-4 md:px-16 bg-white text-gray-800">
-  <div class="max-w-5xl mx-auto text-center">
-    <h2 class="text-4xl font-bold mb-2" style="color:#EA6E95">Bewerbung</h2>
-    <p class="text-lg mb-8">Ein Überblick über meinen Werdegang & meine Skills – kompakt und anschaulich für Bewerbungsgespräche.</p>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bewerbung – Nora Hedfeld</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preload" href="/fonts/Myfont2-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fdfdfd;
+      color: #333;
+      margin: 0;
+      padding: 2rem;
+    }
+    h1 {
+      font-size: 2.4rem;
+      font-family: 'Myfont2-Regular', cursive;
+      color: #E68DA4;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .backlink {
+      text-align: center;
+      margin-top: 1rem;
+    }
+    .backlink a {
+      color: #7BC8E6;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .section {
+      margin: 3rem 0;
+    }
+    .section h2 {
+      font-size: 1.8rem;
+      color: #7BC8E6;
+      border-bottom: 2px solid #7BC8E6;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+    .downloads ul {
+      list-style: none;
+      padding: 0;
+    }
+    .downloads li {
+      margin: 0.5rem 0;
+    }
+    .downloads a {
+      color: #555;
+      text-decoration: none;
+      border: 1px solid #ccc;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      display: inline-block;
+      background-color: #fff;
+    }
+    .downloads a:hover {
+      background-color: #f5f5f5;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bewerbung & Unterlagen</h1>
+
+  <div class="section">
+    <h2>Lebenslauf als Zeitstrahl</h2>
+    <img src="/img/lebenslauf-zeitstrahl.png" alt="Zeitstrahl Lebenslauf Nora Hedfeld" style="width: 100%; max-width: 800px; display: block; margin: 0 auto;">
   </div>
 
-  <!-- Zeitstrahl -->
-  <div class="relative border-l-2 border-gray-200 ml-6 mb-16">
-    <div class="mb-10 ml-6">
-      <div class="absolute w-4 h-4 bg-[#EA6E95] rounded-full -left-2.5 border-2 border-white"></div>
-      <h3 class="text-xl font-semibold">seit 10/2021 – B.A. BWL (Marketing)</h3>
-      <p class="text-sm text-gray-600">Staatlich anerkannte Fachhochschule für Wirtschaft, Dortmund</p>
-      <p class="text-sm">Vertiefung: Marketing, Eventmanagement, Prozessoptimierung</p>
-    </div>
+  <div class="section">
+    <h2>Downloads</h2>
+    <div class="downloads">
+      <h3>Qualifikationen & Führerscheine</h3>
+      <ul>
+        <li><a href="/downloads/Ausbildereignung_Hedfeld.pdf" download>Ausbildereignung</a></li>
+        <li><a href="/downloads/EDV-Führerschein.pdf" download>EDV-Führerschein</a></li>
+        <li><a href="/downloads/Führerschein_Hedfeld.pdf" download>Führerschein</a></li>
+        <li><a href="/downloads/Jagdschein_Hedfeld.pdf" download>Jagdschein</a></li>
+        <li><a href="/downloads/C1_Zertifikat.pdf" download>C1 Sprachzertifikat</a></li>
+      </ul>
 
-    <div class="mb-10 ml-6">
-      <div class="absolute w-4 h-4 bg-[#83D0E4] rounded-full -left-2.5 border-2 border-white"></div>
-      <h3 class="text-xl font-semibold">2021 – Ausbildung zur Veranstaltungskauffrau</h3>
-      <p class="text-sm text-gray-600">satis&fy AG, Werne</p>
-      <p class="text-sm">Schwerpunkt: Projektleitung, Eventlogistik, Veranstaltungsplanung</p>
-    </div>
+      <h3>Zeugnisse & Examen</h3>
+      <ul>
+        <li><a href="/downloads/Examen_Hedfeld.pdf" download>Examen</a></li>
+        <li><a href="/downloads/Zeugnisse_Betriebswirt.pdf" download>Zeugnisse Betriebswirtin</a></li>
+      </ul>
 
-    <div class="mb-10 ml-6">
-      <div class="absolute w-4 h-4 bg-[#F9E267] rounded-full -left-2.5 border-2 border-white"></div>
-      <h3 class="text-xl font-semibold">2019 – Fachhochschulreife (Gestaltung)</h3>
-      <p class="text-sm text-gray-600">Adolf-Kolping-Berufskolleg, Münster</p>
-      <p class="text-sm">Basiswissen in Design, Medienproduktion, Typografie</p>
-    </div>
-  </div>
-
-  <!-- Skills -->
-  <div class="max-w-4xl mx-auto">
-    <h3 class="text-2xl font-semibold mb-4" style="color:#EA6E95">Skills & Tools</h3>
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm">
-      <div class="bg-[#FDECEF] p-4 rounded-xl">Projektmanagement (Factro, Trello)</div>
-      <div class="bg-[#E6F5F9] p-4 rounded-xl">Eventplanung & -organisation</div>
-      <div class="bg-[#FFF9D9] p-4 rounded-xl">Social Media & Content Creation</div>
-      <div class="bg-[#FDECEF] p-4 rounded-xl">SEO & Webauftritt</div>
-      <div class="bg-[#E6F5F9] p-4 rounded-xl">Canva, Adobe Express</div>
-      <div class="bg-[#FFF9D9] p-4 rounded-xl">Grundlagen: Figma, Illustrator</div>
+      <h3>Portfolio & Bildrechte</h3>
+      <ul>
+        <li><a href="/downloads/Portfolio%20Nora%20Hedfeld_25.pdf" download>Portfolio Nora Hedfeld</a></li>
+        <li><a href="/downloads/Bildrechte_Hedfeld.pdf" download>Bildrechte</a></li>
+      </ul>
     </div>
   </div>
 
-  <!-- Download -->
-  <div class="text-center mt-12">
-    <a href="Lebenslauf_Hedfeld.pdf" download class="inline-block bg-[#EA6E95] text-white font-semibold py-2 px-6 rounded-lg hover:bg-[#d45b83]">PDF herunterladen</a>
+  <div class="backlink">
+    <a href="index.html">← Zurück zur Startseite</a>
   </div>
-</section>
+</body>
+</html>
