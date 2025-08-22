@@ -3,104 +3,143 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bewerbung – Nora Hedfeld</title>
+  <title>Zertifikate & Nachweise – Nora Hedfeld</title>
+  <link rel="stylesheet" href="styles.css" />
   <style>
     body {
-      font-family: 'Poppins', sans-serif;
+      font-family: sans-serif;
+      background-color: #fffdfd;
       margin: 0;
       padding: 2rem;
-      background-color: #fefefe;
-      color: #222;
+      color: #1e1e1e;
     }
-    h2 {
-      font-family: 'MyFont2', cursive;
-      color: #df6c91;
-      font-size: 1.6rem;
+
+    h1, h2 {
+      font-family: 'Myfont2-Regular', sans-serif;
+      color: #d36e9e;
       text-align: center;
     }
-    p {
-      text-align: center;
+
+    .accordion {
+      max-width: 900px;
+      margin: 2rem auto;
+    }
+
+    .accordion-item {
+      border: 1px solid #e1e1e1;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      overflow: hidden;
+    }
+
+    .accordion-header {
+      background-color: #f9f9f9;
       color: #333;
+      padding: 1rem;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: background-color 0.3s;
     }
-    #timeline, #zertifikate {
-      max-width: 800px;
-      margin: 60px auto;
+
+    .accordion-header:hover {
+      background-color: #f0f0f0;
     }
-    #timeline div {
-      border-left: 3px solid #df6c91;
-      padding-left: 20px;
-      position: relative;
+
+    .accordion-content {
+      display: none;
+      padding: 0;
+      background: #fff;
     }
-    .entry {
-      margin-bottom: 40px;
+
+    .accordion-content iframe {
+      width: 100%;
+      height: 500px;
+      border: none;
     }
-    .entry h3 {
-      color: #df6c91;
-      margin-bottom: 5px;
-    }
-    iframe {
-      border: 1px solid #ddd;
-      border-radius: 8px;
-    }
-    a {
-      color: #df6c91;
+
+    .zurueck {
+      display: block;
+      text-align: center;
+      margin-top: 3rem;
+      color: #d36e9e;
       text-decoration: none;
     }
   </style>
 </head>
 <body>
+  <h1>Zertifikate & Nachweise</h1>
+  <p style="text-align:center;">Alle Dokumente in stilvoller Vorschau:</p>
 
-  <section id="timeline">
-    <h2>Bewerbung & Qualifikationen</h2>
-    <p>Ein kurzer Blick auf meinen Werdegang</p>
-
-    <div>
-      <div class="entry">
-        <h3>🎓 2017 – Abitur</h3>
-        <p>Allgemeine Hochschulreife</p>
-      </div>
-      <div class="entry">
-        <h3>👩‍⚕️ 2017 – Bundesfreiwilligendienst & Aushilfe</h3>
-        <p>Praktische Erfahrungen in sozialen Einrichtungen & erste berufliche Einblicke</p>
-      </div>
-      <div class="entry">
-        <h3>🎭 2017–2021 – Ausbildung zur Veranstaltungskauffrau</h3>
-        <p>Projektleitung & Veranstaltungsorganisation bei satis&fy AG</p>
-      </div>
-      <div class="entry">
-        <h3>🏢 2021–2023 – Berufserfahrung bei Dieckmann</h3>
-        <p>Marketing, Events, Social Media & Prozessoptimierung</p>
-      </div>
-      <div class="entry">
-        <h3>📚 seit 2023 – Weiterbildung zur Betriebswirtin (VWA)</h3>
-        <p>Marketing, Recht & Wirtschaft – Abschluss voraussichtlich Juli 2025</p>
+  <div class="accordion">
+    <div class="accordion-item">
+      <div class="accordion-header">📄 Ausbildereignung</div>
+      <div class="accordion-content">
+        <iframe src="downloads/Ausbildereignung_Hedfeld.pdf"></iframe>
       </div>
     </div>
-  </section>
-
- <section>
-  <h2 style="color: #e96b9d; font-family: 'Myfont2', sans-serif; text-align: center; margin-bottom: 20px;">
-    Zertifikate & Nachweise
-  </h2>
-  <p style="text-align: center;">Alle Dokumente als eingebettete Vorschau:</p>
-
-  <div style="display: flex; flex-direction: column; gap: 40px; align-items: center; margin: 40px 0;">
-    <iframe src="downloads/Ausbildereignung_Hedfeld.pdf" width="90%" height="500px" style="border: none;"></iframe>
-    <iframe src="downloads/Bildrechte_Hedfeld.pdf" width="90%" height="500px" style="border: none;"></iframe>
-    <iframe src="downloads/C1_Zertifikat.pdf" width="90%" height="500px" style="border: none;"></iframe>
-    <iframe src="downloads/EDV-Führerschein.pdf" width="90%" height="500px" style="border: none;"></iframe>
-    <iframe src="downloads/Examen_Hedfeld.pdf" width="90%" height="500px" style="border: none;"></iframe>
-    <iframe src="downloads/Führerschein_Hedfeld.pdf" width="90%" height="500px" style="border: none;"></iframe>
-    <iframe src="downloads/Jagdschein_Hedfeld.pdf" width="90%" height="500px" style="border: none;"></iframe>
-    <iframe src="downloads/Lebenslauf_Hedfeld.pdf" width="90%" height="500px" style="border: none;"></iframe>
-    <iframe src="downloads/Zeugnisse_Betriebswirt.pdf" width="90%" height="500px" style="border: none;"></iframe>
+    <div class="accordion-item">
+      <div class="accordion-header">📄 Bildrechte</div>
+      <div class="accordion-content">
+        <iframe src="downloads/Bildrechte_Hedfeld.pdf"></iframe>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-header">📄 C1-Zertifikat</div>
+      <div class="accordion-content">
+        <iframe src="downloads/C1_Zertifikat.pdf"></iframe>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-header">📄 EDV-Führerschein</div>
+      <div class="accordion-content">
+        <iframe src="downloads/EDV-Führerschein.pdf"></iframe>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-header">📄 Examen Betriebswirtin</div>
+      <div class="accordion-content">
+        <iframe src="downloads/Examen_Hedfeld.pdf"></iframe>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-header">📄 Führerschein</div>
+      <div class="accordion-content">
+        <iframe src="downloads/Führerschein_Hedfeld.pdf"></iframe>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-header">📄 Jagdschein</div>
+      <div class="accordion-content">
+        <iframe src="downloads/Jagdschein_Hedfeld.pdf"></iframe>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-header">📄 Lebenslauf</div>
+      <div class="accordion-content">
+        <iframe src="downloads/Lebenslauf_Hedfeld.pdf"></iframe>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-header">📄 Zeugnisse Betriebswirt</div>
+      <div class="accordion-content">
+        <iframe src="downloads/Zeugnisse_Betriebswirt.pdf"></iframe>
+      </div>
+    </div>
   </div>
 
-  <p style="text-align: center; margin-top: 40px;">
-    <a href="index.html" style="color: #e96b9d;">← Zurück zur Startseite</a>
-  </p>
-</section>
+  <a class="zurueck" href="index.html">← Zurück zur Startseite</a>
 
-
+  <script>
+    const headers = document.querySelectorAll('.accordion-header');
+    headers.forEach(header => {
+      header.addEventListener('click', () => {
+        const content = header.nextElementSibling;
+        const isOpen = content.style.display === 'block';
+        document.querySelectorAll('.accordion-content').forEach(c => c.style.display = 'none');
+        content.style.display = isOpen ? 'none' : 'block';
+      });
+    });
+  </script>
 </body>
 </html>
